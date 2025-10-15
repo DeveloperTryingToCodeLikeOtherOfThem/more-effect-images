@@ -5,7 +5,7 @@ namespace config {
 
 interface Image {
     //% helper=imageFadeUntil 
-    //% blockId=image_fadeUntil block="fadeUntil %x %y %ms %c"
+    //% blockId=image_fadeUntil block="fadeUntil %x %y %ms=1000 %c"
     fadeUntil(x: number, y: number, ms: number, c: number): Image
     //% helper=imageClear
     //% blockId=image_clear block="clear"
