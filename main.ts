@@ -6,15 +6,15 @@ namespace config {
 interface Image {
     //% helper=imageFadeUntil 
     //% blockId=image_fadeUntil block="%picture=variables_get fadeUntil %x %y %ms=1000 %c"
-     //% picture="picture"
+ //% picture.defl="picture"
     fadeUntil(x: number, y: number, ms: number, c: number): Image
     //% helper=imageClear
     //% blockId=image_clear block="%picture=variables_get clear"
-    //% picture="picture"
+    //% picture.defl="picture"
     clear(): void
     //% helper=imageReplaceAllTo
     //% blockId=image_replaceAll block="%picture=variables_get replace all pixels"
-      //% picture="picture"
+     //% picture.defl="picture"
     replaceAllPixels(src: Image, pixel: number): Image
 }
 
