@@ -5,13 +5,13 @@ namespace config {
 
 interface Image {
     //% helper=imageFadeUntil 
-    //% blockId=image_fadeUntil block="fadeUntil %x %y %ms=1000 %c"
+    //% blockId=image_fadeUntil block="$this(createImage) fadeUntil %x %y %ms=1000 %c"
     fadeUntil(x: number, y: number, ms: number, c: number): Image
     //% helper=imageClear
-    //% blockId=image_clear block="clear"
+    //% blockId=image_clear block="$this(createImage) clear"
     clear(): void
     //% helper=imageReplaceAllTo
-    //% blockId=image_replaceAll block="replace all pixels"
+    //% blockId=image_replaceAll block="$this(createImage) replace all pixels"
     replaceAllPixels(src: Image, pixel: number): Image
 }
 
